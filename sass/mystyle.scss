@@ -1,0 +1,231 @@
+@import "compass";
+$bgcolor: #0a1218;
+$textcolor: white;
+
+body {
+  font-family: "ubuntu", sans-serif;
+  font-size: 100%;
+  color: #FFF;
+  text-align: center;
+  height: 100vh;
+  background: url(../img/bgtest2.png);
+  background-size: cover;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+main {
+  height: 100%;
+  position: relative;
+}
+header {
+  margin: 0px;
+  color: white;
+
+  h1 {
+    font-size: 47px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    font-family: "Expansiva", sans-serif;
+  }
+  h2 {
+    font-family: "Expansiva", sans-serif;
+    font-style: italic;
+  }
+}
+
+/***PROFILE ****/
+#profiles {
+  width: 90%;
+  height: 55%;
+  margin-bottom: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#list {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+
+}
+.profile {
+  width: 20%;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding: 3px;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $textcolor;
+    font-weight: bold;
+.imgprofile {
+  display: block;
+  background-color: $bgcolor;
+
+  width: 100%;
+  overflow: hidden;
+  img{
+    height: 100%;
+    
+  }
+}
+    h3 {
+      background-color: $bgcolor;
+      height: 35px;
+      line-height: 33px;
+      width: 100%;
+      margin-top: 2px;
+      opacity: 0.8;
+    }
+ 
+      p.shortpres{
+              background-color: rgba($bgcolor, 0.9);
+    height: 90px;
+          margin-top: 2px;
+    white-space: normal;
+    font-size: 12px;
+          width: 100%;
+
+          line-height: 20px;
+          padding: 5px;
+          box-sizing:border-box;
+  }
+  }
+
+}
+.btnright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: $bgcolor;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.btnleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  border: none;
+  color: $bgcolor;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+button.cache {
+  display: none;
+}
+
+
+
+/***** MYPROFILE ********/
+#presprofile {
+  height: 400px;
+  width: 90%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .myprofile {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 100%;
+    width: 200px;
+        z-index: 4;
+
+img{
+    height: auto;
+    width: 100%;
+  margin-bottom:-3px;
+  padding:0;
+  box-sizing:border-box;
+  }
+
+ul{
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  margin:0;
+  padding:0;
+  li{
+
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+      background-color: rgba($bgcolor, 0.9);
+      margin-top: 4px;
+    
+   a{
+
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+
+  }
+}
+}
+ 
+
+  
+ 
+} 
+  .description {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 210px;
+    
+    .desc{
+       height: 100%;
+    width: 100%;
+    background-color: rgba($bgcolor, 0.5);
+
+    }
+  }
+}
+
+
+
+footer{
+   background-color: $bgcolor;
+   width: 100%;
+   opacity:0.8;
+    height: 50px;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 5%;
+    text-align: left;
+    box-sizing:border-box;
+
+
+}

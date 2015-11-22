@@ -147,6 +147,7 @@ width: 95%;
   padding-bottom: 40px;
      @media all and (max-width:350px) {
 overflow: scroll;
+-webkit-overflow-scrolling: touch;
 
 }
 }

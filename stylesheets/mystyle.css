@@ -178,10 +178,11 @@ section.two div.jumb {
   /* line 141, ../sass/mystyle.scss */
   #profiles {
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
-/* line 153, ../sass/mystyle.scss */
+/* line 154, ../sass/mystyle.scss */
 #list {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -190,7 +191,7 @@ section.two div.jumb {
   width: 100%;
 }
 
-/* line 160, ../sass/mystyle.scss */
+/* line 161, ../sass/mystyle.scss */
 .profile {
   width: 20%;
   display: inline-block;
@@ -198,42 +199,42 @@ section.two div.jumb {
   padding: 5px;
 }
 @media all and (max-width: 900px) {
-  /* line 160, ../sass/mystyle.scss */
+  /* line 161, ../sass/mystyle.scss */
   .profile {
     width: 25%;
   }
 }
 @media all and (max-width: 650px) {
-  /* line 160, ../sass/mystyle.scss */
+  /* line 161, ../sass/mystyle.scss */
   .profile {
     width: 33.3333%;
   }
 }
 @media all and (max-width: 350px) {
-  /* line 160, ../sass/mystyle.scss */
+  /* line 161, ../sass/mystyle.scss */
   .profile {
     width: 90%;
   }
 }
-/* line 177, ../sass/mystyle.scss */
+/* line 178, ../sass/mystyle.scss */
 .profile .imgprofile {
   display: block;
   background-color: #0a1218;
   width: 100%;
   overflow: hidden;
 }
-/* line 183, ../sass/mystyle.scss */
+/* line 184, ../sass/mystyle.scss */
 .profile .imgprofile img {
   height: 100%;
 }
-/* line 187, ../sass/mystyle.scss */
+/* line 188, ../sass/mystyle.scss */
 .profile h3 {
   background-color: rgba(10, 18, 24, 0.8);
   height: 35px;
   line-height: 33px;
   width: 100%;
 }
-/* line 193, ../sass/mystyle.scss */
+/* line 194, ../sass/mystyle.scss */
 .profile p.shortpres {
   background-color: rgba(10, 18, 24, 0.5);
   height: 90px;
@@ -243,13 +244,13 @@ section.two div.jumb {
   line-height: 20px;
   padding: 5px;
 }
-/* line 202, ../sass/mystyle.scss */
+/* line 203, ../sass/mystyle.scss */
 .profile div.links {
   width: 100%;
   position: relative;
   text-align: left;
 }
-/* line 207, ../sass/mystyle.scss */
+/* line 208, ../sass/mystyle.scss */
 .profile div.links span {
   padding-right: 2px;
   padding-top: 2px;
@@ -259,7 +260,7 @@ section.two div.jumb {
   line-height: 40px;
   text-align: center;
 }
-/* line 216, ../sass/mystyle.scss */
+/* line 217, ../sass/mystyle.scss */
 .profile div.links span a {
   color: white;
   display: block;
@@ -270,7 +271,7 @@ section.two div.jumb {
   height: 100%;
   text-decoration: none;
 }
-/* line 227, ../sass/mystyle.scss */
+/* line 228, ../sass/mystyle.scss */
 .profile div.links span:last-child {
   padding-right: 0px;
   height: 42px;
@@ -279,12 +280,12 @@ section.two div.jumb {
   right: 0px;
   top: -2px;
 }
-/* line 235, ../sass/mystyle.scss */
+/* line 236, ../sass/mystyle.scss */
 .profile div.links span:last-child a {
   background-color: rgba(10, 18, 24, 0.5);
 }
 
-/* line 246, ../sass/mystyle.scss */
+/* line 247, ../sass/mystyle.scss */
 .btnright {
   width: 60px;
   height: 60px;
@@ -294,13 +295,13 @@ section.two div.jumb {
   cursor: pointer;
 }
 @media all and (max-width: 350px) {
-  /* line 246, ../sass/mystyle.scss */
+  /* line 247, ../sass/mystyle.scss */
   .btnright {
     display: none;
   }
 }
 
-/* line 258, ../sass/mystyle.scss */
+/* line 259, ../sass/mystyle.scss */
 .btnleft {
   cursor: pointer;
   background-color: transparent;
@@ -310,32 +311,32 @@ section.two div.jumb {
   height: 60px;
 }
 @media all and (max-width: 350px) {
-  /* line 258, ../sass/mystyle.scss */
+  /* line 259, ../sass/mystyle.scss */
   .btnleft {
     display: none;
   }
 }
 
-/* line 270, ../sass/mystyle.scss */
+/* line 271, ../sass/mystyle.scss */
 button.cache {
   color: #0a1218;
 }
 
 /*****MODAL*****/
-/* line 275, ../sass/mystyle.scss */
+/* line 276, ../sass/mystyle.scss */
 div.modal {
   color: #0a1218;
   text-align: left;
 }
-/* line 279, ../sass/mystyle.scss */
+/* line 280, ../sass/mystyle.scss */
 div.modal .modal-header {
   height: 50px;
 }
-/* line 282, ../sass/mystyle.scss */
+/* line 283, ../sass/mystyle.scss */
 div.modal .modal-header h4 {
   font-weight: bold;
 }
-/* line 286, ../sass/mystyle.scss */
+/* line 287, ../sass/mystyle.scss */
 div.modal .close {
   position: absolute;
   right: 10px;

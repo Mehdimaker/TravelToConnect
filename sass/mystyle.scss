@@ -11,6 +11,9 @@ $textcolor: white;
 * {
   box-sizing: border-box;
 }
+.clickable {
+    cursor: pointer;
+}
 body {
   font-family: "ubuntu", sans-serif;
   font-size: 100%;
@@ -64,6 +67,10 @@ width: 95%;
         width: 80px;
         height: auto;
         margin-bottom: 40px;
+             @media all and (max-width:650px) {
+width: 60px;
+
+}
       }
       h1 {
         font-size: 49px;

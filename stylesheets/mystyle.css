@@ -8,6 +8,11 @@
 }
 
 /* line 14, ../sass/mystyle.scss */
+.clickable {
+  cursor: pointer;
+}
+
+/* line 17, ../sass/mystyle.scss */
 body {
   font-family: "ubuntu", sans-serif;
   font-size: 100%;
@@ -16,14 +21,14 @@ body {
   padding-top: 100vh;
 }
 
-/* line 21, ../sass/mystyle.scss */
+/* line 24, ../sass/mystyle.scss */
 section {
   min-height: 100vh;
   z-index: 1;
   background-color: #142f3b;
 }
 
-/* line 26, ../sass/mystyle.scss */
+/* line 29, ../sass/mystyle.scss */
 section.accueil {
   height: 100%;
   width: 100%;
@@ -35,7 +40,7 @@ section.accueil {
   top: 0px;
   z-index: -5;
 }
-/* line 37, ../sass/mystyle.scss */
+/* line 40, ../sass/mystyle.scss */
 section.accueil header {
   margin: 0px;
   color: white;
@@ -45,18 +50,18 @@ section.accueil header {
   margin: auto;
 }
 @media all and (max-width: 650px) {
-  /* line 37, ../sass/mystyle.scss */
+  /* line 40, ../sass/mystyle.scss */
   section.accueil header {
     width: 90%;
   }
 }
 @media all and (max-width: 350px) {
-  /* line 37, ../sass/mystyle.scss */
+  /* line 40, ../sass/mystyle.scss */
   section.accueil header {
     width: 95%;
   }
 }
-/* line 53, ../sass/mystyle.scss */
+/* line 56, ../sass/mystyle.scss */
 section.accueil header .encar {
   height: 300px;
   position: absolute;
@@ -67,68 +72,74 @@ section.accueil header .encar {
   left: 0;
   width: 80%;
 }
-/* line 63, ../sass/mystyle.scss */
+/* line 66, ../sass/mystyle.scss */
 section.accueil header .encar img {
   width: 80px;
   height: auto;
   margin-bottom: 40px;
 }
-/* line 68, ../sass/mystyle.scss */
+@media all and (max-width: 650px) {
+  /* line 66, ../sass/mystyle.scss */
+  section.accueil header .encar img {
+    width: 60px;
+  }
+}
+/* line 75, ../sass/mystyle.scss */
 section.accueil header .encar h1 {
   font-size: 49px;
   margin-bottom: 10px;
   font-family: "expansiva";
 }
 @media all and (max-width: 900px) {
-  /* line 68, ../sass/mystyle.scss */
+  /* line 75, ../sass/mystyle.scss */
   section.accueil header .encar h1 {
     font-size: 43px;
   }
 }
 @media all and (max-width: 650px) {
-  /* line 68, ../sass/mystyle.scss */
+  /* line 75, ../sass/mystyle.scss */
   section.accueil header .encar h1 {
     font-size: 35px;
   }
 }
 @media all and (max-width: 350px) {
-  /* line 68, ../sass/mystyle.scss */
+  /* line 75, ../sass/mystyle.scss */
   section.accueil header .encar h1 {
     font-size: 30px;
   }
 }
-/* line 85, ../sass/mystyle.scss */
+/* line 92, ../sass/mystyle.scss */
 section.accueil header .encar h2 {
   font-size: 15px;
   font-family: "expansiva";
   font-style: italic;
 }
 @media all and (max-width: 900px) {
-  /* line 85, ../sass/mystyle.scss */
+  /* line 92, ../sass/mystyle.scss */
   section.accueil header .encar h2 {
     font-size: 14px;
   }
 }
 @media all and (max-width: 650px) {
-  /* line 85, ../sass/mystyle.scss */
+  /* line 92, ../sass/mystyle.scss */
   section.accueil header .encar h2 {
     font-size: 14px;
   }
 }
 @media all and (max-width: 350px) {
-  /* line 85, ../sass/mystyle.scss */
+  /* line 92, ../sass/mystyle.scss */
   section.accueil header .encar h2 {
     font-size: 12px;
   }
 }
 
-/* line 105, ../sass/mystyle.scss */
+/* line 112, ../sass/mystyle.scss */
 section.two {
   padding-top: 40px;
   position: relative;
   z-index: 5;
 }
-/* line 109, ../sass/mystyle.scss */
+/* line 116, ../sass/mystyle.scss */
 section.two .sepa {
   height: 40px;
   width: 100%;
@@ -136,13 +147,13 @@ section.two .sepa {
   top: -40px;
   background-image: url(../img/shadow.png);
 }
-/* line 116, ../sass/mystyle.scss */
+/* line 123, ../sass/mystyle.scss */
 section.two h2 {
   font-size: 26px;
   margin-bottom: 20px;
   font-family: "expansiva";
 }
-/* line 121, ../sass/mystyle.scss */
+/* line 128, ../sass/mystyle.scss */
 section.two div.jumb {
   width: 70%;
   font-style: italic;
@@ -152,20 +163,20 @@ section.two div.jumb {
   line-height: 18px;
 }
 @media all and (max-width: 650px) {
-  /* line 121, ../sass/mystyle.scss */
+  /* line 128, ../sass/mystyle.scss */
   section.two div.jumb {
     width: 90%;
   }
 }
 @media all and (max-width: 350px) {
-  /* line 121, ../sass/mystyle.scss */
+  /* line 128, ../sass/mystyle.scss */
   section.two div.jumb {
     width: 95%;
   }
 }
 
 /***PROFILE ****/
-/* line 141, ../sass/mystyle.scss */
+/* line 148, ../sass/mystyle.scss */
 #profiles {
   width: 98%;
   margin: auto;
@@ -175,14 +186,14 @@ section.two div.jumb {
   padding-bottom: 40px;
 }
 @media all and (max-width: 350px) {
-  /* line 141, ../sass/mystyle.scss */
+  /* line 148, ../sass/mystyle.scss */
   #profiles {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
 
-/* line 154, ../sass/mystyle.scss */
+/* line 161, ../sass/mystyle.scss */
 #list {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -191,7 +202,7 @@ section.two div.jumb {
   width: 100%;
 }
 
-/* line 161, ../sass/mystyle.scss */
+/* line 168, ../sass/mystyle.scss */
 .profile {
   width: 20%;
   display: inline-block;
@@ -199,42 +210,42 @@ section.two div.jumb {
   padding: 5px;
 }
 @media all and (max-width: 900px) {
-  /* line 161, ../sass/mystyle.scss */
+  /* line 168, ../sass/mystyle.scss */
   .profile {
     width: 25%;
   }
 }
 @media all and (max-width: 650px) {
-  /* line 161, ../sass/mystyle.scss */
+  /* line 168, ../sass/mystyle.scss */
   .profile {
     width: 33.3333%;
   }
 }
 @media all and (max-width: 350px) {
-  /* line 161, ../sass/mystyle.scss */
+  /* line 168, ../sass/mystyle.scss */
   .profile {
     width: 90%;
   }
 }
-/* line 178, ../sass/mystyle.scss */
+/* line 185, ../sass/mystyle.scss */
 .profile .imgprofile {
   display: block;
   background-color: #0a1218;
   width: 100%;
   overflow: hidden;
 }
-/* line 184, ../sass/mystyle.scss */
+/* line 191, ../sass/mystyle.scss */
 .profile .imgprofile img {
   height: 100%;
 }
-/* line 188, ../sass/mystyle.scss */
+/* line 195, ../sass/mystyle.scss */
 .profile h3 {
   background-color: rgba(10, 18, 24, 0.8);
   height: 35px;
   line-height: 33px;
   width: 100%;
 }
-/* line 194, ../sass/mystyle.scss */
+/* line 201, ../sass/mystyle.scss */
 .profile p.shortpres {
   background-color: rgba(10, 18, 24, 0.5);
   height: 90px;
@@ -244,13 +255,13 @@ section.two div.jumb {
   line-height: 20px;
   padding: 5px;
 }
-/* line 203, ../sass/mystyle.scss */
+/* line 210, ../sass/mystyle.scss */
 .profile div.links {
   width: 100%;
   position: relative;
   text-align: left;
 }
-/* line 208, ../sass/mystyle.scss */
+/* line 215, ../sass/mystyle.scss */
 .profile div.links span {
   padding-right: 2px;
   padding-top: 2px;
@@ -260,7 +271,7 @@ section.two div.jumb {
   line-height: 40px;
   text-align: center;
 }
-/* line 217, ../sass/mystyle.scss */
+/* line 224, ../sass/mystyle.scss */
 .profile div.links span a {
   color: white;
   display: block;
@@ -271,7 +282,7 @@ section.two div.jumb {
   height: 100%;
   text-decoration: none;
 }
-/* line 228, ../sass/mystyle.scss */
+/* line 235, ../sass/mystyle.scss */
 .profile div.links span:last-child {
   padding-right: 0px;
   height: 42px;
@@ -280,12 +291,12 @@ section.two div.jumb {
   right: 0px;
   top: -2px;
 }
-/* line 236, ../sass/mystyle.scss */
+/* line 243, ../sass/mystyle.scss */
 .profile div.links span:last-child a {
   background-color: rgba(10, 18, 24, 0.5);
 }
 
-/* line 247, ../sass/mystyle.scss */
+/* line 254, ../sass/mystyle.scss */
 .btnright {
   width: 60px;
   height: 60px;
@@ -295,13 +306,13 @@ section.two div.jumb {
   cursor: pointer;
 }
 @media all and (max-width: 350px) {
-  /* line 247, ../sass/mystyle.scss */
+  /* line 254, ../sass/mystyle.scss */
   .btnright {
     display: none;
   }
 }
 
-/* line 259, ../sass/mystyle.scss */
+/* line 266, ../sass/mystyle.scss */
 .btnleft {
   cursor: pointer;
   background-color: transparent;
@@ -311,32 +322,32 @@ section.two div.jumb {
   height: 60px;
 }
 @media all and (max-width: 350px) {
-  /* line 259, ../sass/mystyle.scss */
+  /* line 266, ../sass/mystyle.scss */
   .btnleft {
     display: none;
   }
 }
 
-/* line 271, ../sass/mystyle.scss */
+/* line 278, ../sass/mystyle.scss */
 button.cache {
   color: #0a1218;
 }
 
 /*****MODAL*****/
-/* line 276, ../sass/mystyle.scss */
+/* line 283, ../sass/mystyle.scss */
 div.modal {
   color: #0a1218;
   text-align: left;
 }
-/* line 280, ../sass/mystyle.scss */
+/* line 287, ../sass/mystyle.scss */
 div.modal .modal-header {
   height: 50px;
 }
-/* line 283, ../sass/mystyle.scss */
+/* line 290, ../sass/mystyle.scss */
 div.modal .modal-header h4 {
   font-weight: bold;
 }
-/* line 287, ../sass/mystyle.scss */
+/* line 294, ../sass/mystyle.scss */
 div.modal .close {
   position: absolute;
   right: 10px;

@@ -5,7 +5,7 @@
 
 
       $position = 1; 
-      $decalage = $('.profile').width()+6;
+      $decalage = $('.profile').width()+10;
       $positionprojmax = ($('.profile').length )- 4;
       $marginleftlist = 0;
 
@@ -43,3 +43,8 @@
           } else {}
           addopacity();
       });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

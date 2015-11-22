@@ -1,52 +1,154 @@
 @import "compass";
 $bgcolor: #0a1218;
+$bgcolor2:#071117;
+$bg: #142f3b;
 $textcolor: white;
 
+@font-face {
+  font-family: 'expansiva';
+  src: url('../fonts/expansiva/expansiva.otf') format('truetype'),
+}
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "ubuntu", sans-serif;
   font-size: 100%;
   color: #FFF;
   text-align: center;
-  height: 100vh;
-  background: url(../img/bgtest2.png);
-  background-size: cover;
-  padding-top: 40px;
-  box-sizing: border-box;
+  padding-top: 100vh;
 }
-main {
+section {
+  min-height: 100vh;
+  z-index: 1;
+  background-color: $bg;
+}
+section.accueil {
   height: 100%;
-  position: relative;
-}
-header {
-  margin: 0px;
-  color: white;
+  width: 100%;
+  background: url(../img/bgtest2.png) center;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  z-index: -5;
 
-  h1 {
-    font-size: 47px;
-    font-weight: bold;
-    margin-bottom: 24px;
-    box-sizing: border-box;
-    font-family: "Expansiva", sans-serif;
+  header {
+    margin: 0px;
+    color: white;
+    background-color: rgba($bgcolor, 0.7);
+    height: 100%;
+    width: 80%;
+    margin: auto;
+      @media all and (max-width:650px) {
+width:90%;
+
+}
+  @media all and (max-width:350px) {
+width: 95%;
+
+}
+
+    .encar {
+      height: 300px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 80%;
+
+      img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 40px;
+      }
+      h1 {
+        font-size: 49px;
+        margin-bottom: 10px;
+        font-family: "expansiva";
+    @media all and (max-width:900px) {
+font-size: 43px;
+
+}
+  @media all and (max-width:650px) {
+font-size: 35px;
+
+}
+  @media all and (max-width:350px) {
+font-size: 30px;
+
+}
+      }
+      h2 {
+        font-size: 15px;
+        font-family: "expansiva";
+        font-style: italic;
+         @media all and (max-width:900px) {
+font-size: 14px;
+
+}
+  @media all and (max-width:650px) {
+font-size: 14px;
+
+}
+  @media all and (max-width:350px) {
+font-size: 12px;
+
+}
+      }
+    }
   }
+}
+section.two {
+  padding-top: 40px;
+  position: relative;
+  z-index: 5;
+.sepa{
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: -40px;
+  background-image: url(../img/shadow.png);
+}
   h2 {
-    font-family: "Expansiva", sans-serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: "expansiva";
+  }
+  div.jumb {
+    width: 70%;
     font-style: italic;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 40px;
+    line-height: 18px;
+   
+  @media all and (max-width:650px) {
+width:90%;
+
+}
+  @media all and (max-width:350px) {
+width: 95%;
+
+}
   }
 }
 
 /***PROFILE ****/
 #profiles {
-  width: 90%;
-  height: 55%;
-  margin-bottom: auto;
-  position: absolute;
+  width: 98%;
   margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40px;
+     @media all and (max-width:350px) {
+overflow: scroll;
+
+}
 }
 #list {
   -webkit-transition: all 0.5s ease;
@@ -54,178 +156,141 @@ header {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 100%;
-
 }
 .profile {
   width: 20%;
   display: inline-block;
-  box-sizing: border-box;
   vertical-align: top;
-  padding: 3px;
+  padding: 5px;
+   @media all and (max-width:900px) {
+width: 25%;
 
-  a {
-    display: block;
-    text-decoration: none;
-    color: $textcolor;
-    font-weight: bold;
-.imgprofile {
-  display: block;
-  background-color: $bgcolor;
-
-  width: 100%;
-  overflow: hidden;
-  img{
-    height: 100%;
-    
-  }
 }
-    h3 {
-      background-color: $bgcolor;
-      height: 35px;
-      line-height: 33px;
-      width: 100%;
-      margin-top: 2px;
-      opacity: 0.8;
+  @media all and (max-width:650px) {
+width: 33.3333%;
+
+}
+  @media all and (max-width:350px) {
+width: 90%;
+
+}
+  .imgprofile {
+    display: block;
+    background-color: $bgcolor;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
     }
- 
-      p.shortpres{
-              background-color: rgba($bgcolor, 0.9);
+  }
+  h3 {
+    background-color: rgba($bgcolor, 0.8);
+    height: 35px;
+    line-height: 33px;
+    width: 100%;
+  }
+  p.shortpres {
+    background-color: rgba($bgcolor, 0.5);
     height: 90px;
-          margin-top: 2px;
     white-space: normal;
     font-size: 12px;
-          width: 100%;
+    width: 100%;
+    line-height: 20px;
+    padding: 5px;
+  }
+  div.links {
+    width: 100%;
+    position: relative;
+    text-align: left;
 
-          line-height: 20px;
-          padding: 5px;
-          box-sizing:border-box;
+    span {
+      padding-right: 2px;
+      padding-top: 2px;
+      display: inline-block;
+      width: 20%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+
+      a {
+        color: white;
+        display: block;
+        background-color: rgba($bgcolor, 0.8);
+        border-radius: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+      }
+    }
+    span:last-child {
+      padding-right: 0px;
+      height: 42px;
+      line-height: 42px;
+      position: absolute;
+      right: 0px;
+      top: -2px;
+
+      a {
+        background-color: rgba($bgcolor, 0.5);
+      }
+    }
   }
-  }
+
+
+
+
 
 }
 .btnright {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   width: 60px;
   height: 60px;
   background-color: transparent;
   border: none;
-  color: $bgcolor;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  color: white;
+  cursor: pointer;
+    @media all and (max-width:350px) {
+display: none;
+
+}
 }
 .btnleft {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  cursor: pointer;
   background-color: transparent;
   border: none;
-  color: $bgcolor;
+  color: white;
   width: 60px;
   height: 60px;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
+     @media all and (max-width:350px) {
+display: none;
+
+}
 }
 button.cache {
-  display: none;
+  color: $bgcolor;
 }
 
+/*****MODAL*****/
+div.modal {
+  color: $bgcolor;
+  text-align: left;
 
+  .modal-header {
+    height: 50px;
 
-/***** MYPROFILE ********/
-#presprofile {
-  height: 400px;
-  width: 90%;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  .myprofile {
-    position: absolute;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    height: 100%;
-    width: 200px;
-        z-index: 4;
-
-img{
-    height: auto;
-    width: 100%;
-  margin-bottom:-3px;
-  padding:0;
-  box-sizing:border-box;
-  }
-
-ul{
-  text-decoration: none;
-  list-style-type: none;
-  width: 100%;
-  margin:0;
-  padding:0;
-  li{
-
-    height: 36px;
-    line-height: 36px;
-    width: 100%;
-      background-color: rgba($bgcolor, 0.9);
-      margin-top: 4px;
-    
-   a{
-
-  text-decoration: none;
-  color: white;
-  width: 100%;
-  height: 100%;
-  font-size: 12px;
-
-  }
-}
-}
- 
-
-  
- 
-} 
-  .description {
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    padding-left: 210px;
-    
-    .desc{
-       height: 100%;
-    width: 100%;
-    background-color: rgba($bgcolor, 0.5);
-
+    h4 {
+      font-weight: bold;
     }
   }
-}
-
-
-
-footer{
-   background-color: $bgcolor;
-   width: 100%;
-   opacity:0.8;
-    height: 50px;
+  .close {
     position: absolute;
-    bottom: 40px;
-    padding-left: 5%;
-    text-align: left;
-    box-sizing:border-box;
-
-
+    right: 10px;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    font-size: 30px;
+    top: 0px;
+  }
 }
